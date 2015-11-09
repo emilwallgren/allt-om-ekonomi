@@ -13,8 +13,6 @@
 
 <body>
 
-<div id='wrapper'>
-
 <div id='header'>
 <?php if(isset($header)) echo $header?>
 <?php $this->views->render('header')?>
@@ -36,7 +34,6 @@
 <?php $this->views->render('footer')?>
 </div>
 
-</div>
 
 <?php if(isset($jquery)):?><script src='<?=$this->url->asset($jquery)?>'></script><?php endif; ?>
 

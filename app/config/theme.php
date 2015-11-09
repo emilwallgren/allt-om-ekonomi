@@ -21,8 +21,8 @@ return [
      * Add default views.
      */
     'views' => [
-        ['region' => 'header', 'template' => 'welcome/header', 'data' => [], 'sort' => -1],
-        ['region' => 'footer', 'template' => 'welcome/footer', 'data' => [], 'sort' => -1],
+        ['region' => 'header', 'template' => 'static/header', 'data' => [], 'sort' => -1],
+        ['region' => 'footer', 'template' => 'static/footer', 'data' => [], 'sort' => -1],
     ],
 
 
@@ -35,10 +35,12 @@ return [
         'lang' => 'sv',
 
         // Append this value to each <title>
-        'title_append' => ' | Anax a web template',
+        'title_append' => ' | Allt om Ekonomi',
 
         // Stylesheets
-        'stylesheets' => ['css/style.css'],
+        'stylesheets' => ['css/style.css', 
+        									'css/bootstrap-3.3.5-dist/css/bootstrap.min.css'
+        									],
 
         // Inline style
         'style' => null,
@@ -53,7 +55,7 @@ return [
         'jquery' => '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js',
 
         // Array with javscript-files to include
-        'javascript_include' => [],
+        'javascript_include' => ['css/bootstrap-3.3.5-dist/js/bootstrap.min.js'],
 
         // Use google analytics for tracking, set key or null to disable
         'google_analytics' => null,

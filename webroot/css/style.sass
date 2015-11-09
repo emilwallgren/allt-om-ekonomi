@@ -1,0 +1,35 @@
+$borderColor: #30B171
+$hoverColor: #2B9F65
+
+#registerForm
+	.headLineRegister
+		text-align: center
+		
+	form
+		font-family: helvetica
+		display: block
+		margin: 0 auto
+		width: 200px
+		
+		label
+			font-family: helvetica
+			text-transform: uppercase
+		
+		input
+			&[type = "text"]
+				border: 4px solid $borderColor
+				border-radius: 3px
+				width: 200px
+			&[type = "password"]
+				border: 4px solid $borderColor
+				border-radius: 3px
+				width: 200px
+			&[type = "submit"]
+				background:  $borderColor
+				border: none
+				color: white
+				text-transform: uppercase
+				width: 200px
+				height: 30px
+				&:hover
+					background:  $hoverColor
