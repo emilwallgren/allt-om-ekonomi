@@ -1,6 +1,9 @@
 Allt Om Ekonomi
 ===============
-So du har bestämt dig för att använda Allt Om Ekonomi.
+Välkommen till allt om ekonomi. Allt om ekonomi är byggd med hjälp av MVC-ramverket Anax-MVC utvecklad av Mikael Roos på BTH.
+Ett exempel på Allt Om Ekonomi finner du [här](http://www.student.bth.se/~emwc15/phpmvc/alltomekonomi/Anax-MVC/webroot/)
+
+So nu har du alltså bestämt dig för att använda Allt Om Ekonomi.
 Jag skall visa dig hur du får igång den på ditt egna system.
 
 Installationen består av 4 punkter:
@@ -125,6 +128,14 @@ När paketen installerats går du in i src/anvandare/anvandareController.php. If
 
 Konfigurera databasuppkoppling
 ------------------------------
-Nu är det bara en sak kvar! :-O
+Nu är det bara en sak kvar!
 Det är att gå in i app/config/config_mysql.php och lägga till dina databasuppgifter.
 Därefter är Allt Om Ekonomi helt installerad och totalt funktionsduglig.
+
+Slutord
+-------
+Tack för att du testar på Allt om Ekonomi. Skulle det vara några frågor kan jag (Emil Wallgren) nås på emil.wallgren@hotmail.se
+
+Koda Vidare!
+
+/Emil Wallgren
