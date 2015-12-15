@@ -102,3 +102,14 @@ CREATE TABLE `votes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 ```
+Nu är databasen på plats. Grattis :-)
+Därefter laddar du ner allt-om-ekonomi ifrån detta github-repository.
+
+När du laddat ner allt om ekonomi så installerar du composer och därefter installerar paketen som står anvisade i composer.json.
+När paketen installerats är vi redo att ta nästa steg.
+
+När paketen installerats går du in i src/anvandare/anvandareController.php. Ifrån raden 117 till 122 måste du själv skriva in inställningarna på mailfunktionen. Dessa innefattar host, username, password, SMTPSecure samt port. Om du vill ha ett annat meddelande i mailet som skickas så ändrar du texten i Subject, Body och Altbody.
+
+Nu är det bara en sak kvar! :-O
+Det är att gå in i app/config/config_mysql.php och lägga till dina databasuppgifter.
+Därefter är Allt Om Ekonomi helt installerad och totalt funktionsduglig.
