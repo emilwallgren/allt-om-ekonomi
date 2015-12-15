@@ -1,27 +1,421 @@
-#registerForm .headLineRegister {
+html {
+  position: relative;
+  min-height: 100%; }
+  html body {
+    margin-bottom: 60px; }
+
+.hem .jumbotron {
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hem .jumbotron h1 {
+    color: white; }
+  .hem .jumbotron p {
+    color: white; }
+.hem .col-md-6 .tagg {
+  display: block;
+  float: left;
+  background-color: #337ab7;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  margin-right: 10px;
+  margin-top: 10px; }
+.hem .col-md-12 {
+  margin-top: 30px;
+  background-color: #337ab7;
+  color: white;
+  padding: 20px; }
+
+.register {
+  padding-top: 30px; }
+  .register #registerForm {
+    margin-top: 30px; }
+    .register #registerForm form {
+      font-family: helvetica;
+      display: block;
+      margin: 0 auto;
+      width: 200px; }
+      .register #registerForm form label {
+        font-family: helvetica;
+        text-transform: uppercase; }
+      .register #registerForm form input[type="text"] {
+        border: 4px solid #30B171;
+        border-radius: 3px;
+        width: 200px; }
+      .register #registerForm form input[type="password"] {
+        border: 4px solid #30B171;
+        border-radius: 3px;
+        width: 200px; }
+      .register #registerForm form input[type="submit"] {
+        background: #30B171;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        width: 200px;
+        height: 30px; }
+        .register #registerForm form input[type="submit"]:hover {
+          background: #2B9F65; }
+
+.bytlosen {
+  padding-bottom: 30px; }
+  .bytlosen .row .col-md-12 form {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 30px; }
+    .bytlosen .row .col-md-12 form input[type="submit"] {
+      width: 100%; }
+  .bytlosen .row h1 {
+    text-align: center;
+    margin-bottom: 30px; }
+
+.bytanvandarnamn h1 {
   text-align: center; }
-#registerForm form {
-  font-family: helvetica;
+.bytanvandarnamn .col-md-12 form {
+  width: 400px;
   display: block;
   margin: 0 auto;
-  width: 200px; }
-  #registerForm form label {
-    font-family: helvetica;
-    text-transform: uppercase; }
-  #registerForm form input[type="text"] {
-    border: 4px solid #30B171;
-    border-radius: 3px;
-    width: 200px; }
-  #registerForm form input[type="password"] {
-    border: 4px solid #30B171;
-    border-radius: 3px;
-    width: 200px; }
-  #registerForm form input[type="submit"] {
-    background: #30B171;
+  margin-top: 50px; }
+  .bytanvandarnamn .col-md-12 form input[type="submit"] {
+    width: 100%; }
+
+.skrivfraga h1 {
+  text-align: center; }
+.skrivfraga form {
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px; }
+  .skrivfraga form .form-group textarea {
+    height: 100px; }
+  .skrivfraga form .form-group input[type="submit"] {
+    width: 100%; }
+
+.loginForm h1 {
+  text-align: center;
+  margin-bottom: 50px; }
+.loginForm form {
+  width: 400px;
+  display: block;
+  margin: 0 auto; }
+  .loginForm form input[type="text"] {
+    width: 100%;
+    border: 2px solid #E8E8E8;
+    border-radius: 4px; }
+  .loginForm form input[type="password"] {
+    width: 100%;
+    border: 2px solid #E8E8E8;
+    border-radius: 4px; }
+  .loginForm form input[type="submit"] {
+    width: 100%;
     border: none;
+    background-color: #30B171;
+    color: white; }
+    .loginForm form input[type="submit"]:hover {
+      background-color: #90C57F; }
+
+.profil .row .col-md-8 .circle, .profil .row .col-md-12 .circle {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background: no-repeat;
+  background-size: 100%; }
+.profil .row .col-md-8 h1, .profil .row .col-md-8 h3, .profil .row .col-md-8 h5, .profil .row .col-md-12 h1, .profil .row .col-md-12 h3, .profil .row .col-md-12 h5 {
+  text-align: center; }
+.profil .row .col-md-8 .votes, .profil .row .col-md-12 .votes {
+  color: green; }
+.profil .row .col-md-8 .amount, .profil .row .col-md-12 .amount {
+  color: blue; }
+.profil .row .col-md-2 {
+  background-color: #f8f8f8; }
+  .profil .row .col-md-2 ul {
+    list-style-type: none;
+    padding-left: 0; }
+.profil .info {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .profil .info .tagg {
+    background-color: #337ab7;
+    padding: 10px;
     color: white;
-    text-transform: uppercase;
+    display: block;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px; }
+    .profil .info .tagg:hover {
+      background-color: #0066cc;
+      text-decoration: none; }
+
+.changeImage {
+  padding-bottom: 50px; }
+  .changeImage h1 {
+    text-align: center;
+    margin-bottom: 30px; }
+  .changeImage .backgroundImage {
+    display: block;
+    margin: 0 auto;
     width: 200px;
-    height: 30px; }
-    #registerForm form input[type="submit"]:hover {
-      background: #2B9F65; }
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover; }
+  .changeImage form {
+    width: 160px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px; }
+    .changeImage form input[type="submit"] {
+      width: 100%;
+      margin-top: 10px; }
+
+.anvandare h1 {
+  font-family: Muli, sans-serif;
+  text-align: center;
+  margin-bottom: 50px; }
+.anvandare .row {
+  margin-bottom: 30px; }
+  .anvandare .row .backgroundImage {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    border-radius: 50%; }
+
+.fragor h1 {
+  text-align: center; }
+.fragor .row {
+  background-color: #f8f8f8;
+  width: 50%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px; }
+
+.fragorsidan .taggar {
+  margin-top: 10px; }
+  .fragorsidan .taggar a.tagg {
+    background-color: #337ab7;
+    color: white;
+    padding: 10px;
+    border-radius: 10px; }
+    .fragorsidan .taggar a.tagg:hover {
+      text-decoration: none;
+      background-color: #0066cc; }
+.fragorsidan .fragan .col-md-10 .backgroundImage {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px; }
+.fragorsidan .fragan .col-md-2 {
+  display: block;
+  float: right;
+  padding-top: 20px; }
+  .fragorsidan .fragan .col-md-2 a {
+    width: 20px; }
+    .fragorsidan .fragan .col-md-2 a img {
+      width: 20px;
+      display: block;
+      float: right; }
+  .fragorsidan .fragan .col-md-2 .vote {
+    display: block;
+    float: right;
+    font-size: 35px;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px; }
+.fragorsidan .fraganKommentar .col-md-12 .comment {
+  border: 3px solid #f8f8f8;
+  padding: 0;
+  margin-bottom: 30px; }
+  .fragorsidan .fraganKommentar .col-md-12 .comment .commentHeader {
+    background-color: #f8f8f8;
+    padding: 10px; }
+    .fragorsidan .fraganKommentar .col-md-12 .comment .commentHeader .commenter {
+      display: block;
+      float: left;
+      width: 300px; }
+      .fragorsidan .fraganKommentar .col-md-12 .comment .commentHeader .commenter .backgroundImage {
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        display: block;
+        float: left;
+        margin-right: 10px; }
+    .fragorsidan .fraganKommentar .col-md-12 .comment .commentHeader .voteArrows {
+      display: block;
+      float: right;
+      margin-top: 5px; }
+      .fragorsidan .fraganKommentar .col-md-12 .comment .commentHeader .voteArrows a img {
+        width: 18px;
+        display: block;
+        float: left; }
+      .fragorsidan .fraganKommentar .col-md-12 .comment .commentHeader .voteArrows .vote {
+        display: block;
+        float: left;
+        font-size: 30px;
+        margin: 0;
+        margin-left: 10px;
+        margin-right: 10px; }
+  .fragorsidan .fraganKommentar .col-md-12 .comment .commentBody {
+    padding: 10px; }
+.fragorsidan .fraganKommentar .col-md-2 {
+  display: block;
+  float: right;
+  padding-top: 20px; }
+  .fragorsidan .fraganKommentar .col-md-2 a {
+    width: 20px; }
+    .fragorsidan .fraganKommentar .col-md-2 a img {
+      width: 20px;
+      display: block;
+      float: right; }
+  .fragorsidan .fraganKommentar .col-md-2 .vote {
+    display: block;
+    float: right;
+    font-size: 35px;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px; }
+.fragorsidan .fraganSvar .col-md-12 .answer {
+  border: 3px solid #f8f8f8;
+  padding: 0;
+  margin-bottom: 30px; }
+  .fragorsidan .fraganSvar .col-md-12 .answer .answerHeader {
+    background-color: #f8f8f8;
+    padding: 10px; }
+    .fragorsidan .fraganSvar .col-md-12 .answer .answerHeader .answerer {
+      display: block;
+      float: left;
+      width: 300px; }
+      .fragorsidan .fraganSvar .col-md-12 .answer .answerHeader .answerer .backgroundImage {
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        display: block;
+        float: left;
+        margin-right: 10px; }
+    .fragorsidan .fraganSvar .col-md-12 .answer .answerHeader .acceptedAndArrows {
+      width: 200px;
+      display: block;
+      float: right; }
+      .fragorsidan .fraganSvar .col-md-12 .answer .answerHeader .acceptedAndArrows .acceptedAnswer {
+        display: block;
+        float: left; }
+        .fragorsidan .fraganSvar .col-md-12 .answer .answerHeader .acceptedAndArrows .acceptedAnswer img {
+          width: 30px; }
+      .fragorsidan .fraganSvar .col-md-12 .answer .answerHeader .acceptedAndArrows .voteArrows {
+        display: block;
+        float: right;
+        margin-top: 5px; }
+        .fragorsidan .fraganSvar .col-md-12 .answer .answerHeader .acceptedAndArrows .voteArrows a img {
+          width: 18px;
+          display: block;
+          float: left; }
+        .fragorsidan .fraganSvar .col-md-12 .answer .answerHeader .acceptedAndArrows .voteArrows .vote {
+          display: block;
+          float: left;
+          font-size: 30px;
+          margin: 0;
+          margin-left: 10px;
+          margin-right: 10px; }
+  .fragorsidan .fraganSvar .col-md-12 .answer .answerBody {
+    padding: 10px; }
+.fragorsidan .svarKommentar .col-md-10 .answerComment {
+  border: 3px solid #f8f8f8;
+  padding: 0;
+  margin-bottom: 30px;
+  margin-right: 15px; }
+  .fragorsidan .svarKommentar .col-md-10 .answerComment .answerCommentHeader {
+    background-color: #f8f8f8;
+    padding: 10px; }
+    .fragorsidan .svarKommentar .col-md-10 .answerComment .answerCommentHeader .answerer {
+      display: block;
+      float: left;
+      width: 300px; }
+      .fragorsidan .svarKommentar .col-md-10 .answerComment .answerCommentHeader .answerer .backgroundImage {
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        display: block;
+        float: left;
+        margin-right: 10px; }
+    .fragorsidan .svarKommentar .col-md-10 .answerComment .answerCommentHeader .voteArrows {
+      display: block;
+      float: right;
+      margin-top: 5px; }
+      .fragorsidan .svarKommentar .col-md-10 .answerComment .answerCommentHeader .voteArrows a img {
+        width: 18px;
+        display: block;
+        float: left; }
+      .fragorsidan .svarKommentar .col-md-10 .answerComment .answerCommentHeader .voteArrows .vote {
+        display: block;
+        float: left;
+        font-size: 30px;
+        margin: 0;
+        margin-left: 10px;
+        margin-right: 10px; }
+  .fragorsidan .svarKommentar .col-md-10 .answerComment .answerCommentBody {
+    padding: 10px; }
+.fragorsidan .svarKommentarForm .col-md-10 form {
+  margin-right: 15px; }
+.fragorsidan .fraganKommentarForm form input[type="submit"], .fragorsidan .svarKommentarForm form input[type="submit"], .fragorsidan .svarForm form input[type="submit"] {
+  width: 100%; }
+
+.taggarSidan h1 {
+  text-align: center;
+  margin-bottom: 50px; }
+.taggarSidan .taggContainer {
+  display: block;
+  margin: 0 auto;
+  width: 500px; }
+  .taggarSidan .taggContainer a {
+    background-color: #337ab7;
+    display: block;
+    float: left;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px; }
+    .taggarSidan .taggContainer a:hover {
+      color: white;
+      background-color: #0066cc;
+      text-decoration: none; }
+
+.fragor h1 {
+  text-align: center;
+  margin-bottom: 30px; }
+
+.error, .success, .notice, .warning {
+  margin: 20px 0;
+  padding: 20px;
+  color: #333; }
+
+.error {
+  background-color: Crimson; }
+
+.success {
+  background-color: LimeGreen; }
+
+.notice {
+  background-color: SteelBlue; }
+
+.warning {
+  background-color: Khaki; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f8f8f8;
+  /*opacity: 0.5; */ }
+  .footer .text-muted {
+    padding-top: 20px; }

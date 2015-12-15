@@ -93,13 +93,13 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
     	 *
     	 * @return boolean true or false if saving went okey.
     	 */
-    	public function create($values)
+    	public function create($values, $table)
     	{
     	    $keys   = array_keys($values);
     	    $values = array_values($values);
     	 
     	    $this->db->insert(
-    	        $this->getSource(),
+    	        $table,
     	        $keys
     	    );
     	 
@@ -119,7 +119,7 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
     	 *
     	 * @return boolean true or false if saving went okey.
     	 */
-    	public function update($values)
+    	public function update($values, $table)
     	{
     	    $keys   = array_keys($values);
     	    $values = array_values($values);
@@ -129,7 +129,7 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
     	    $values[] = $this->id;
     	 
     	    $this->db->update(
-    	        $this->getSource(),
+    	        $table,
     	        $keys,
     	        "id = ?"
     	    );
@@ -147,15 +147,15 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
     	 *
     	 * @return boolean true or false if saving went okey.
     	 */
-    	public function save($values = [])
+    	public function save($values = [], $table)
     	{
     	    $this->setProperties($values);
     	    $values = $this->getProperties();
     	 
     	    if (isset($values['id'])) {
-    	        return $this->update($values);
+    	        return $this->update($values, $table);
     	    } else {
-    	        return $this->create($values);
+    	        return $this->create($values, $table);
     	    }
     	}
     	
