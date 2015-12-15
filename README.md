@@ -3,6 +3,14 @@ Allt Om Ekonomi
 So du har bestämt dig för att använda Allt Om Ekonomi.
 Jag skall visa dig hur du får igång den på ditt egna system.
 
+Installationen består av 4 punkter:
+1. Installera Databas
+2. Installera paket
+3. Konfigurera mail
+4. Konfigurera databasuppkoppling
+
+Installera Databas
+------------------
 Allt om Ekonomi är hyfsat värdelös utan sin databas, så vi börjar med att skapa den.
 Gå in i din sql-hanterare och skriv in följande i terminalen:
 
@@ -105,11 +113,18 @@ CREATE TABLE `votes` (
 Nu är databasen på plats. Grattis :-)
 Därefter laddar du ner allt-om-ekonomi ifrån detta github-repository.
 
+Installera paket
+----------------
+
 När du laddat ner allt om ekonomi så installerar du composer och därefter installerar paketen som står anvisade i composer.json.
 När paketen installerats är vi redo att ta nästa steg.
 
+Konfigurera mailinställningar
+-----------------------------
 När paketen installerats går du in i src/anvandare/anvandareController.php. Ifrån raden 117 till 122 måste du själv skriva in inställningarna på mailfunktionen. Dessa innefattar host, username, password, SMTPSecure samt port. Om du vill ha ett annat meddelande i mailet som skickas så ändrar du texten i Subject, Body och Altbody.
 
+Konfigurera databasuppkoppling
+------------------------------
 Nu är det bara en sak kvar! :-O
 Det är att gå in i app/config/config_mysql.php och lägga till dina databasuppgifter.
 Därefter är Allt Om Ekonomi helt installerad och totalt funktionsduglig.
